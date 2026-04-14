@@ -166,7 +166,7 @@ export class JenkinsBuilder {
         });
 
         const statusCode = result.status === 'success' ? 200 : 401;
-        response.json({}).status(statusCode);
+        response.status(statusCode).json({});
       },
     );
 
